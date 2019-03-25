@@ -1,14 +1,7 @@
-const http = require("http");
-
-const hostname = "127.0.0.1";
+const express = require("express");
+const app = express();
 const port = process.env.PORT;
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "text/plain");
-  res.end("Hello from NJS1");
-});
+app.get("/", (req, res) => res.send("Hello from NJS1"));
 
-server.listen(port, hostname, () => {
-  console.log(`NJS1 running at http://${hostname}:${port}/`);
-});
+app.listen(port, () => console.log(`NJS1 app listening on port ${port}!`));

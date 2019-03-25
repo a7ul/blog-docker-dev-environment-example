@@ -1,5 +1,5 @@
 {
-  "name": "njs1",
+  "name": "njs2",
   "version": "1.0.0",
   "description": "A sample nodejs server",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "author": "atulanand94@gmail.com",
   "license": "MIT",
   "engines": {
-    "node": "<=6.9.11"
+    "node": ">=10.1.0"
   },
   "dependencies": {
     "express": "^4.16.4"
