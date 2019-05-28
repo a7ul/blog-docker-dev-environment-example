@@ -12,3 +12,15 @@ services:
     working_dir: /root/njs1
     volumes:
       - ./njs1:/root/njs1:cached # <--- This will map ./njs1 to /root/njs1 inside the container.
+
+  njs2:
+    image: node:12.3-alpine
+    command: sh -c "npm install && npm start"
+    environment:
+      - NODE_ENV=development
+      - PORT=8000
+    ports:
+      - "8000:8000"
+    working_dir: /root/njs2
+    volumes:
+      - ./njs2:/root/njs2:cached # <--- This will map ./njs2 to /root/njs2 inside the container.
