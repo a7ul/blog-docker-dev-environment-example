@@ -9,7 +9,7 @@
   "author": "atulanand94@gmail.com",
   "license": "MIT",
   "engines": {
-    "node": "<=6.9.11"
+    "node": "<=6.17.0"
   },
   "dependencies": {
     "express": "^4.16.4"

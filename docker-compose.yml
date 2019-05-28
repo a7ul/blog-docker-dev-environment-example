@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  njs1:
+    build: ./njs1
+    command: sh -c "npm install && npm start"
+    environment:
+      - NODE_ENV=development
+      - PORT=7000
+    ports:
+      - "7000:7000"
+    working_dir: /root/njs1
