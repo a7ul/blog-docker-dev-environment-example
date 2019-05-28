@@ -24,3 +24,15 @@ services:
     working_dir: /root/njs2
     volumes:
       - ./njs2:/root/njs2:cached # <--- This will map ./njs2 to /root/njs2 inside the container.
+
+  py1:
+    image: python:3-stretch
+    command: sh -c "pip install -r requirements.txt && python -m server"
+    environment:
+      - PORT=9000
+      - FLASK_ENV=development
+    ports:
+      - "9000:9000"
+    working_dir: /root/py1
+    volumes:
+      - ./py1:/root/py1:cached # <--- This will map ./py1 to /root/py1 inside the container.
