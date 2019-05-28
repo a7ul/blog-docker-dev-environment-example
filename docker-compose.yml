@@ -10,3 +10,5 @@ services:
     ports:
       - "7000:7000"
     working_dir: /root/njs1
+    volumes:
+      - ./njs1:/root/njs1:cached # <--- This will map ./njs1 to /root/njs1 inside the container.
