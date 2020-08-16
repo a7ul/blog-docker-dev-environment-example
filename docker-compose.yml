@@ -46,4 +46,4 @@ services:
       - "5000:5000"
     working_dir: /root/go1
     volumes:
-      - ./go1:/root/go1:cached # <--- This will map ./py1 to /root/py1 inside the container.
+      - ./go1:/root/go1:cached # <--- This will map ./go1 to /root/go1 inside the container.
