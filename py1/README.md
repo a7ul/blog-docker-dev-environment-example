@@ -2,10 +2,30 @@
 
 This is a super simple example Python Flask based service.
 
-To install dependency:
+## To install dependency
 
-`pip install -r requirements.txt`
+```shell
+pip install -r requirements.txt
+```
 
-To run for development:
+## To run for development
 
-`PORT=9000 python -m server`
+### For Windows
+
+```shell
+SET PORT=9000
+python -m server
+```
+
+### For Mac, Linux or Windows WSL
+
+```shell
+export PORT=9000
+python -m server
+```
+
+or
+
+```shell
+PORT=9000 python -m server
+```
